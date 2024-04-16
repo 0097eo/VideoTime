@@ -2,15 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/044a2cccd3.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoTime</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>VideoTime</h1>
-    <section>
-        <div class="loader-box">
-            <div class="loader"></div>
-        </div>
-    </section>
+    <header id="header">
+        <h1><i class="fa-solid fa-video"></i> VideoTime</h1>
+        <form action="submit" id="search-form">
+            <input type="text" placeholder="search videos">
+            <input type="submit" value="search">
+        </form>
+    </header>
+    <div class="grid-container">
+        <section id="video-box">
+            <div class="loader-box">
+                <div class="loader">
+                    <h3>Videos Go Here</h3>
+                </div>
+            </div>
+        </section>
+        <section id="search-list">
+            <div class="search">
+                <h3>Recommended Videos</h3>
+                <ul id="videos-list">
+
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="./src/script.js"></script>
 </body>
 </html>
