@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoTime</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+
 </head>
 <body>
     <header id="header">
@@ -15,22 +17,10 @@
             <input type="submit" value="search">
         </form>
     </header>
-    <div class="grid-container">
-        <section id="video-box">
-            <div class="loader-box">
-                <div class="loader">
-                    <h3>Videos Go Here</h3>
-                </div>
-            </div>
-        </section>
-        <section id="search-list">
-            <div class="search">
-                <h3>Recommended Videos</h3>
-                <ul id="videos-list">
-
-                </ul>
-            </div>
-        </section>
+    <div class="random videos">
+        <ul id="randoms-list" class="youtube-player">
+            
+        </ul>
     </div>
     <script src="./src/script.js"></script>
 </body>

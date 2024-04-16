@@ -20,7 +20,7 @@ body{
     justify-content: center; 
     gap: 10px;
     padding-top: 0px;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 #search-form input[type="text"] {
@@ -45,15 +45,56 @@ body{
     background-color: black;
     transform: scale(1.15);
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    box-shadow: 0px 22px 70px 4px rgba(0, 0, 0, 0.56);
+h1{
+    color: white;
 }
+
 
 #video-box, #search-list {
     padding: 20px;
     color: white;
     box-shadow: 0px 30px 60px -12px inset rgba(50, 50, 93, 0.25), 0px 18px 36px -18px inset rgba(0, 0, 0, 0.3); 
+}
+.random.videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#randoms-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#randoms-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px; /* Fixed width for all list items */
+    height: 200px; /* Fixed height for all list items */
+    margin: 0.5%;
+    background: #fafafa;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden; /* Ensures the content does not overflow the fixed dimensions */
+}
+
+#randoms-list li img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#randoms-list li p {
+    color: black; /* Set the title text color to white */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add some space above the title */
 }
