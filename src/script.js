@@ -1,5 +1,6 @@
+require('dotenv').config()
 document.addEventListener('DOMContentLoaded', function() {
-    const apiKey = ''; 
+    const apiKey = process.env.API_KEY; 
 
     function getRandomSearchQuery() {
         const words = ['programming', 'tech', 'football', 'music', 'basketball'];
@@ -66,3 +67,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fetchYouTubeVideos(getRandomSearchQuery(), '#randoms-list');
 });
+
+
